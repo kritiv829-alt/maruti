@@ -4,14 +4,7 @@ body { margin: 0; }
 main { width: min(700px, 100% - 32px); margin: 80px auto; }
 header { margin-bottom: 30px; }
 .eyebrow { font-size: 11px; letter-spacing: 2px; font-weight: 700; color: #537568; }
-input, button { font: inherit; }
-input[type="text"], input:not([type]) { width: 100%; min-width: 0; padding: 12px; border: 1px solid #bbc9c0; border-radius: 9px; }
-button { cursor: pointer; border: 0; border-radius: 8px; padding: 11px 15px; }
-button[type="submit"] { color: white; background: #28604d; white-space: nowrap; }
-button:hover { filter: brightness(.93); }
-:focus-visible { outline: 3px solid #b17b32; outline-offset: 3px; }
-.toolbar, footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 13px; }
-.filters { display: flex; gap: 4px; }
+
 .filters button { padding: 8px 10px; background: transparent; color: #53665a; }
 .filters button[aria-pressed="true"] { background: #e9f1e8; color: #254f3e; }
 #count { color: #64736c; }
@@ -20,11 +13,3 @@ ul { list-style: none; padding: 0; margin: 18px 0; }
 .task input { width: 19px; height: 19px; accent-color: #28604d; flex-shrink: 0; }
 .task label { flex: 1; overflow-wrap: anywhere; font-weight: 400; }
 .task.completed label { text-decoration: line-through; color: #7b887f; }
-.delete { background: transparent; color: #8a4646; font-size: 13px; }
-#empty { text-align: center; padding: 32px 0; color: #64736c; font-size: 14px; }
-footer { border-top: 1px solid #edf0ea; padding-top: 16px; color: #64736c; }
-#clear-completed { background: transparent; color: #365948; padding: 8px 0; }
-button:disabled { opacity: .45; cursor: default; }
-.note { text-align: center; font-size: 12px; margin-top: 25px; }
-#storage-warning { font-size: 13px; color: #8a4646; }
-@media (max-width: 480px) { main { margin-top: 36px; } .card { padding: 18px; } .toolbar { flex-wrap: wrap; } }
